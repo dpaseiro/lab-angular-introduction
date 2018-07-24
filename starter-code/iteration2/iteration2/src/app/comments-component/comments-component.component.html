@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default nav-bg">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h1>
+          
+          <p>
+            comments-component works!
+          </p>
+          
+        </h1>
+      </div>
+    </div>
+  </nav>
+
+<form action="#">
+    <label>Name
+      <input type="string" name="name" #authorInput>
+    </label><br>
+    <label>Comment
+     <textarea name="comment" #commentInput></textarea>
+    </label>
+    <input type="submit" value="Add Comment" (click)="addComment(authorInput, commentInput)">
+  </form>
+
+

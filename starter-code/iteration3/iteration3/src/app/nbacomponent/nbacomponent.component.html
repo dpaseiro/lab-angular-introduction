@@ -1,0 +1,32 @@
+<p>
+  nbacomponent works!
+
+
+    <ul>
+      
+      <li *ngFor="let oneTeam of arrayOfChamps" class="champ-card">
+        <div>
+          <div>
+            <h3>{{oneTeam.year}}</h3>
+            <h5>{{oneTeam.team}}</h5>
+            <h5>
+              <img [src]="{{oneTeam.championUrl}}" alt="">
+            </h5>
+            <h5>
+              best players
+
+              <ul>
+                <li *ngFor="let play of arrayOfChamps.players">
+                  {{play}}
+                
+                </h5>
+                </li>
+              </ul>
+
+              <hr>
+          </div>
+        </div>
+        
+      </li>
+      
+    </ul>
